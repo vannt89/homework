@@ -1,12 +1,15 @@
 body {
   margin: 0;
-  font-family: open sans,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+  font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+    helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol, noto color emoji;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .logo {
   display: inline-block;
@@ -47,9 +50,9 @@ body {
 }
 
 img {
-  height: 100%; 
-  width: 100%; 
-  object-fit: contain
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .nav-link {
@@ -76,15 +79,27 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  margin-left: 3px;
+}
+
+p {
+  margin-left: 7px;
+  text-align: left;
 }
 
 textarea.form-control {
   height: auto;
 }
 
+.form-contact {
+  float: left;
+  width: 1100px;
+  height: auto;
+}
+
 .form-group {
   margin-bottom: 15px;
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 .form-control {
@@ -127,6 +142,56 @@ textarea.form-control {
   background: #1c408e;
 }
 
+iframe {
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  flex-direction: row;
+  align-content: center;
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1140px;
+}
+
+.row-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.dbox .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #2553b8;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.dbox .icon span {
+  font-size: 20px;
+  color: #fff;
+}
+
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-send:before, .fa-paper-plane:before {
+  content: "\f1d8";
+}
+
+.fa-globe:before {
+  content: "\f0ac";
 }
